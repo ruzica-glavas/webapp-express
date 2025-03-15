@@ -13,5 +13,7 @@ const connection = mysql.createConnection({
   
     console.log('Connected to MySQL!');
   });
+
+  
   
   export default connection;

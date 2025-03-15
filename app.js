@@ -1,5 +1,7 @@
 //Pacchetti da importare
-import express from "express"
+import express from "express";
+import './data/db.js';
+
 
 //Impostazione di express e la porta del server
 const app = express();
