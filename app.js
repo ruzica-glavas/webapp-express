@@ -3,7 +3,7 @@ import express from "express"
 
 //Impostazione di express e la porta del server
 const app = express();
-const port = 3000;
+const port = process.env.SERVER_PORT || 3000;
 
 //Attivazione del server
 app.listen(port, () => {
