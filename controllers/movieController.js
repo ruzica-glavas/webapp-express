@@ -30,11 +30,11 @@ function show(req, res){
 
             const movie = results[0];
 
-            connection.query(reviewsSql, [id], (err, results)=>{
+            connection.query(reviewsSql, [id], (err, reviewsResults)=>{
                 if (err)
                     return res.status(500).json({
                 error: "Errore lato server SHOW function"});
-                book.reviews = reviewsResults;
+                movie.reviews = reviewsResults;
                 res.json(movie);
             })
     })
