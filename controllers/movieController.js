@@ -65,7 +65,7 @@ function storeReview(req, res) {
   const sql =
     'INSERT INTO reviews ( text, name, vote, movie_id ) VALUES (?,?,?,?)';
 
-  //eseguiamo la query
+  //esecuzione della query
   connection.query(sql, [text, name, vote, id], (err, results) => {
     if (err)
       return res.status(500).json({

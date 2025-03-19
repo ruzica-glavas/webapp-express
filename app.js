@@ -16,6 +16,12 @@ app.use(
   })
 )
 
+//middleware per gestire asset statici
+app.use(express.static('public'));
+
+//middleware per gestire le informazioni del body
+app.use(express.json());
+
 //Router libri
 app.use("/movies", movieRouter);
 
