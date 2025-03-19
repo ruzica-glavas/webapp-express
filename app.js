@@ -22,7 +22,8 @@ app.use(express.static('public'));
 //middleware per gestire le informazioni del body
 app.use(express.json());
 
-//Router libri
+
+//Router film
 app.use("/movies", movieRouter);
 
 //Attivazione del server
